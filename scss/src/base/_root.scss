@@ -1,0 +1,34 @@
+:root {
+  --bmr-body-text-color: #{$dark};
+  --bmr-body-bg-color: #{$white};
+
+  --bmr-btn-primary-color: #{$white};
+  --bmr-btn-primary-bg: #{$green};
+  --bmr-btn-primary-bg-hover: #{$green-light};
+
+  --bmr-btn-secondary-color: #{$white};
+  --bmr-btn-secondary-bg: #{$dark};
+
+  --bmr-form-color: #{$dark};
+  --bmr-form-bg: #{$white};
+  --bmr-form-error-color: #{$red};
+  --bmr-form-error-border: #{$red};
+  --bmr-form-border-focus-color: #{$green};
+
+  --bmr-body-font-size: #{$fs-base};
+  --bmr-body-font-weight: #{$fw-normal};
+
+  --bmr-h1-font-size: #{$h-1};
+  --bmr-h2-font-size: #{$h-2};
+  --bmr-h3-font-size: #{$h-3};
+  --bmr-h4-font-size: #{$h-4};
+  --bmr-h5-font-size: #{$h-5};
+  --bmr-h6-font-size: #{$h-6};
+
+  --bmr-h1-font-weight: #{$fw-medium};
+  --bmr-h2-font-weight: #{$fw-medium};
+  --bmr-h3-font-weight: #{$fw-medium};
+  --bmr-h4-font-weight: #{$fw-normal};
+  --bmr-h5-font-weight: #{$fw-normal};
+  --bmr-h6-font-weight: #{$fw-light};
+}

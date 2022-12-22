@@ -1,0 +1,36 @@
+/*=============================================
+=            Foundation - colors              =
+=============================================*/
+
+/**
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this
+ * with their own variables.
+ *
+ * If user is using scss, they can by default use $ variables, else for css, they can use var(--) variables
+ */
+
+/*=============================================
+=            Global text colors               =
+=============================================*/
+
+$body-text-color: var(--bmr-body-text-color, $dark) !default;
+$body-bg-color: var(--bmr-body-bg-color, $white) !default;
+
+/*=============================================
+=                   Buttons                   =
+=============================================*/
+
+$btn-primary-color: var(--bmr-btn-primary-color, $white) !default;
+$btn-primary-bg: var(--bmr-btn-primary-bg, $green) !default;
+$btn-primary-bg-hover: var(--bmr-btn-primary-bg-hover, $green-light) !default;
+
+/*=============================================
+=                   Forms                     =
+=============================================*/
+
+$form-color: var(--bmr-form-color, $dark) !default;
+$form-bg: var(--bmr-form-bg, $white) !default;
+$form-error: var(--bmr-form-error, $red) !default;
+$form-error-border: var(--bmr-form-error-border, $red) !default;
+$form-border-focus-color: var(--bmr-form-border-focus-color, $green) !default;
