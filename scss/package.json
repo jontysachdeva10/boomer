@@ -6,15 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"src/**/*.scss\"",
-    "lint:fix": "stylelint --fix \"src/**/*.scss\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint:fix": "stylelint --fix \"src/**/*.scss\"",
+    "prepare": "cd.. && husky install scss/.husky"
   },
   "lint-staged": {
-    "*.scss": "npm run lint:fix"
+    "src/**/*.{scss}": "npm run lint:fix"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +24,7 @@
     "stylelint-prettier": "^2.0.0"
   },
   "devDependencies": {
-    "husky": "^5.2.0",
+    "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
     "postcss-scss": "^4.0.6"
   }
