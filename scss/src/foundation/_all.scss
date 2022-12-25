@@ -1,4 +1,6 @@
-@import "./colors";
-@import "./mixins";
-@import "./typography";
-@import "./variables";
+/* Always keep the variable scss on top or else the build will fail */
+
+@import "variables";
+@import "colors";
+@import "mixins";
+@import "typography";
