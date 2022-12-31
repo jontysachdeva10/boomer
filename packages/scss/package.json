@@ -1,14 +1,14 @@
 {
   "name": "@boomer/scss",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"src/**/*.scss\"",
     "lint:fix": "stylelint --fix \"src/**/*.scss\"",
-    "prepare": "cd.. && husky install scss/.husky",
-    "build": "node src/scripts/build.js"
+    "prepare": "cd.. && cd.. && husky install packages/scss/.husky",
+    "build": "node src/scripts/build.js",
+    "dev" : "nodemon --watch src --exec npm run build -e scss"
   },
   "lint-staged": {
     "src/**/*.{scss}": "npm run lint:fix"
@@ -28,6 +28,8 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
     "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
     "postcss-scss": "^4.0.6"
-  }
+  },
+  "description": ""
 }

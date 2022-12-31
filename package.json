@@ -1,0 +1,33 @@
+{
+  "name": "@boomer/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hoist": "npx lerna bootstrap --hoist",
+    "dev": "lerna run dev",
+    "start": "lerna run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jontysachdeva10/boomer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jontysachdeva10/boomer/issues"
+  },
+  "homepage": "https://github.com/jontysachdeva10/boomer#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "playground/*"
+    ]
+  },
+  "nohoist": []
+}
