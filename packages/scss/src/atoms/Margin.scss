@@ -1,0 +1,15 @@
+@import "foundation/all";
+
+$sides: top, right, bottom, left;
+
+@each $space, $value in $spacing {
+  .bmr-margin-#{$space} {
+    margin: $value;
+  }
+
+  @each $side in $sides {
+    .bmr-margin-#{$side}-#{$space} {
+      margin-#{$side}: $value;
+    }
+  }
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "hoist": "npx lerna bootstrap --hoist",
     "dev": "lerna run dev",
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "build": "lerna run build"
   },
   "repository": {
     "type": "git",
